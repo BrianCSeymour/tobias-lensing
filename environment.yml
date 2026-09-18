@@ -1,0 +1,17 @@
+name: tobias-lensing
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pycbc
+  - numpy
+  - scipy
+  - pandas
+  - astropy
+  - matplotlib
+  - ipykernel
+
+# conda env create -f environment.yml
+# conda env update --file environment.yml --prune
+# conda remove --name tobias-lensing --all
+# python -m ipykernel install --user --name tobias-lensing --display-name "tobias-lensing"
