@@ -1,0 +1,27 @@
+[project]
+name = "tobias-lensing"
+version = "0.1.0"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "pycbc",
+    "numpy",
+    "scipy",
+    "pandas",
+    "astropy",
+    "matplotlib",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel",
+]
+
+[tool.uv]
+package = false
+
+# uv sync                      # create .venv and install everything (incl. dev group)
+# uv sync --upgrade            # update packages to the latest compatible versions
+# uv run python script.py      # run inside the env without activating
+# source .venv/bin/activate    # or activate it the usual way
+# rm -rf .venv                 # remove the env
+# uv run python -m ipykernel install --user --name tobias-lensing --display-name "tobias-lensing"

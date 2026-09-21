@@ -57,3 +57,4 @@
 .auxfiles
 .auxfiles/*
 notes/*
+uv.lock
